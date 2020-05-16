@@ -8,7 +8,7 @@ class PostgresStore {
         CREATE TABLE IF NOT EXISTS migrations
         (
           title varchar(255) CONSTRAINT migrations_pk PRIMARY KEY,
-          timestamp bigint NOT NULL,
+          timestamp bigint,
           description text,
           last bool NOT NULL
         );
